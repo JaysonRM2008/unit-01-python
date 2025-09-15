@@ -51,6 +51,19 @@ It should replace all occurances regardless of captilization
 print("------Task 3------")
 print()
 print()
+text = "I saw a Cat, a cAt, a CAT, and a cat in the catalog."
+
+# Replace various capitalizations of "cat"
+text = text.replace("cat", "dog")
+text = text.replace("Cat", "Dog")
+text = text.replace("CAT", "DOG")
+text = text.replace("cAt", "dOg")
+text = text.replace("caT", "doG")
+text = text.replace("cAT", "dOG")
+text = text.replace("CaT", "DoG")
+text = text.replace("CAt", "DOg")
+
+print(text)
 
 print("------Task 3-------")
 print()
@@ -85,6 +98,22 @@ print("------Task 5-------")
 print()
 print()
 
+# Get two float inputs from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Prevent division by zero
+if num2 == 0:
+    print("Error: Cannot divide by zero.")
+else:
+    # Calculate the quotient
+    quotient = num1 / num2
+
+    # Round to the nearest tenth
+    rounded_result = round(quotient, 1)
+
+    # Print the result
+    print("Quotient (rounded to the nearest tenth):", rounded_result)
 
 print("------Task 5-------")
 print()
