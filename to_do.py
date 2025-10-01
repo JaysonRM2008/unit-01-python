@@ -1,6 +1,8 @@
-todos = []  # Start with an empty to-do list
-
+with open("todos.txt") as files:   # Replace with open
+    todos = files.read().splitlines()
+print(todos)
 while True:  # Main loop
+
     # Display current todo list
     if not todos:
         print("[No to-dos in your list]")
@@ -61,8 +63,5 @@ while True:  # Main loop
     # Exit the program
     elif action == "exit":
         print("Goodbye!")
+            # Catch invalid inputs
         break
-
-    # Catch invalid inputs
-    else:
-        print("Invalid option.")
