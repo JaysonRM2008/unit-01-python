@@ -109,6 +109,21 @@ Write a program that prints the platform your Python interpreter is running on
 print("------Task 6-------")
 print()
 print()
+# Get the platform string
+platform = sys.platform
+
+# Map the platform string to user-friendly names
+if platform.startswith('linux'):
+    friendly_name = 'Linux'
+elif platform == 'win32':
+    friendly_name = 'Windows'
+elif platform == 'darwin':
+    friendly_name = 'MacOS'
+else:
+    friendly_name = f'Unknown platform: {platform}'
+
+# Print the result
+print(f"You are running on: {friendly_name}")
 
 print("------Task 6-------")
 print()
