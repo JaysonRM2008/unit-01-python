@@ -2,7 +2,6 @@ from datetime import date
 from datetime import time
 from datetime import datetime
 
-
 """
 Exercise 1:
 Write a Python program that prints the current date and time using the datetime module.
