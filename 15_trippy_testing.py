@@ -19,6 +19,7 @@ def divide(a, b):
   
 assert divide (10, 20) == 0.5
 assert divide (20, 4) == 5
+#Divides the two numbers
 
 """
 Exercise 2: Factorial
@@ -60,7 +61,7 @@ def reverse_string(string):
 
 assert reverse_string("A string to be reversed.") == ".desrever eb ot gnirts A"
 assert reverse_string("Hello.") == ".olleH"
-
+#reversed th string
 """
 Exercise 4: Fibonacci
 """
@@ -82,6 +83,7 @@ def fibonacci(n):
     return fibonacci(n - 1) + fibonacci(n - 2)
 assert fibonacci(7) == 13
 assert fibonacci(4) == 3
+#fibonacci number
 
 """
 Exercise 5: Email Validation
@@ -100,5 +102,5 @@ def is_valid_email(email):
   """
   email_regex = r"^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+"
   return re.match(email_regex, email) is not None
-assert is_valid_email("jramirez@gmail.com") == True 
-assert is_valid_email("jgeban.gmail.com") == False
+assert is_valid_email("jramirez@gmail.com") == True #valid email
+assert is_valid_email("ban_homework456.gmail.com") == False #validate email
